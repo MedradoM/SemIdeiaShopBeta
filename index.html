@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>SemIdeia Shop</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;    
+            }
+            header{
+                background-color: darkcyan;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+            .lista-cadastro{
+                display: flex;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+            .lista-cadastro input[type=text]{
+                height: 40px;
+                flex: 1;
+                padding-left: 20px;
+
+            }
+            .lista-produto-single{
+                padding: 10px 0;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+            }
+            .lista-produto-single h3{
+                flex: 1;
+                padding: 0 20px;
+            }
+            h3.price-produto{
+                text-align: right;
+            }
+            h3.price-produto > span{
+                background-color: darkcyan;
+                border-radius: 20px;
+                padding: 8px 10px;
+                color: white;
+            }
+            .soma-produto{
+                margin: 20px ;
+            }
+
+        </style>
+        <body>   
+            <header>
+                <h2>SEMIDEIA SHOP</h2>
+            </header>
+            <div class="lista-cadastro">
+                <input type="text" placeholder="nome do produto..." name="nome_produto"/>
+                <input type="number" step="0.01" name="price" title="This should be a number with up to 2 decimal"/>
+                <input type="submit" name="acao" value="Cadastrar"/>
+            </div>
+            <div class="lista-produto">
+
+            </div>
+            <div class="soma-produto">
+                <h1>Total: R$0</h1>
+            </div>
+
+            <button name="limpar">Limpar</button>
+            <script src="supermercado.js"></script>
+        </body>
+    </head>
+</html>
